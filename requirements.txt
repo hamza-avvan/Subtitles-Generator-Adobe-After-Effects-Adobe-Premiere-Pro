@@ -1,0 +1,7 @@
+# ffmpeg (system‑wide)
+# macOS: brew install ffmpeg
+# Ubuntu: sudo apt install ffmpeg
+# Windows: download from https://ffmpeg.org
+
+# Python packages
+openai-whisper
