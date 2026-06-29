@@ -1,3 +1,6 @@
+# Subtitles Generator
+
+Extract dist.zip into the root directory
 
 
 ## Command to Build
