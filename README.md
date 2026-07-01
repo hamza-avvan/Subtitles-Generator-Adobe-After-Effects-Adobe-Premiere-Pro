@@ -73,6 +73,27 @@ python subtitles_to_jsx.py "path/to/video.mp4" -o subtitles.jsx --model base
 
 You can tune the layout and timing with options such as --max-chars, --max-gap, --max-dur, --font, and --font-size.
 
+### Example output structure
+
+The script writes a JSON file with a top-level duration and a list of subtitle entries. A simplified example looks like this:
+
+```json
+{
+  "duration": 12.5,
+  "subtitles": [
+    {
+      "text": "Hello world",
+      "start": 0.0,
+      "end": 1.2,
+      "words": [
+        {"word": "Hello", "start": 0.0, "end": 0.6},
+        {"word": "world", "start": 0.6, "end": 1.2}
+      ]
+    }
+  ]
+}
+```
+
 ## Building a standalone executable
 
 If you want to package the tool as a Windows executable, use PyInstaller and bundle ffmpeg plus the Whisper model assets.
